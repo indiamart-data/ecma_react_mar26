@@ -1,0 +1,20 @@
+{
+  "name": "with_compilation",
+  "version": "1.0.0",
+  "description": "Learning how to configure babel and webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "author": "Manish Sharma",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5"
+  },
+  "dependencies": {
+    "core-js": "^3.46.0"
+  }
+}

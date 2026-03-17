@@ -1,87 +1,60 @@
-// let employees = [
-//     { id: 1, name: "Manish", city: "Pune" },
-//     { id: 2, name: "Neeraj", city: "Delhi" },
-//     { id: 3, name: "Abhijeet", city: "Pune" }
-// ];
+let employees = [
+    { id: 1, name: "Manish", city: "Pune" },
+    { id: 2, name: "Neeraj", city: "Delhi" },
+    { id: 3, name: "Abhijeet", city: "Pune" }
+];
 
-// // -------------------
-// // let pune_employees = [];
+// -------------------
+// let pune_employees = [];
 
-// // for(let i=0;i < employees.length; i++) {
-// //     if(employees[i].city === "Pune") {
-// //         pune_employees.push(employees[i]);
-// //     }
-// // }
+// for(let i=0;i < employees.length; i++) {
+//     if(employees[i].city === "Pune") {
+//         pune_employees.push(employees[i]);
+//     }
+// }
 
-// // console.log(pune_employees);
-
-// // // ----------------------
-// // let pune_employees = [];
-
-// // function filterLogic(item) {
-// //     return item.city === "Pune"
-// // }
-
-// // for(let i=0;i < employees.length; i++) {
-// //     if(filterLogic(employees[i])) {
-// //         pune_employees.push(employees[i]);
-// //     }
-// // }
-
-// // console.log(pune_employees);
-
-// // // ----------------------
-// // function filterLogic(item) {
-// //     return item.city === "Pune"
-// // }
-
-// // let pune_employees = employees.filter(filterLogic);
-
-// // console.log(pune_employees);
-
-// // // ----------------------
-
-// // let pune_employees = employees.filter(function (item) {
-// //     return item.city === "Pune"
-// // });
-
-// // console.log(pune_employees);
-
-// // // ----------------------
-
-// // let pune_employees = employees.filter((item) => {
-// //     return item.city === "Pune"
-// // });
-
-// // console.log(pune_employees);
-
-// // ----------------------
-// let pune_employees = employees.filter(item => item.city === "Pune");
 // console.log(pune_employees);
 
-let largeData = [];
+// // ----------------------
+// let pune_employees = [];
 
-for (let i = 0; i < 1_000_000; i++) {
-    largeData.push({ id: i, name: "manish" });
-}
+// function filterLogic(item) {
+//     return item.city === "Pune"
+// }
 
-console.time("for-loop");
+// for(let i=0;i < employees.length; i++) {
+//     if(filterLogic(employees[i])) {
+//         pune_employees.push(employees[i]);
+//     }
+// }
 
-let result1 = [];
-for (let i = 0; i < largeData.length; i++) {
-    result1.push({
-        ...largeData[i],
-        name: largeData[i].name.toUpperCase()
-    });
-}
+// console.log(pune_employees);
 
-console.timeEnd("for-loop");
+// // ----------------------
+// function filterLogic(item) {
+//     return item.city === "Pune"
+// }
 
-console.time("map");
+// let pune_employees = employees.filter(filterLogic);
 
-let result2 = largeData.map(item => ({
-    ...item,
-    name: item.name.toUpperCase()
-}));
+// console.log(pune_employees);
 
-console.timeEnd("map");
+// // ----------------------
+
+// let pune_employees = employees.filter(function (item) {
+//     return item.city === "Pune"
+// });
+
+// console.log(pune_employees);
+
+// // ----------------------
+
+// let pune_employees = employees.filter((item) => {
+//     return item.city === "Pune"
+// });
+
+// console.log(pune_employees);
+
+// ----------------------
+let pune_employees = employees.filter(item => item.city === "Pune");
+console.log(pune_employees);

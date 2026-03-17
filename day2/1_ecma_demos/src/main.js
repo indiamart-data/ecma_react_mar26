@@ -11,5 +11,16 @@
 // import "./3_functions/3_fn_parameters.js";
 // import "./3_functions/4_rest_and_spread.js";
 // import "./3_functions/5_pure_impure.js";
-import "./3_functions/6_fn_as_argument.js";
+// import "./3_functions/6_fn_as_argument.js";
+// import "./3_functions/7_fn_context.js";
+// import "./3_functions/8_closures.js";
+// import "./3_functions/9_fn_currying.js";
+// import "./3_functions/10_hof.js";
 
+// import "./4_object/1_custom_types.js";
+// import "./4_object/2_using_prototype.js";
+// import "./4_object/3_class.js";
+// import "./4_object/4_class_property.js";
+// import "./4_object/5_inheritance.js";
+
+import './5_async/dom_handler.js';

@@ -42,7 +42,7 @@ const postApiClient = {
             const response = await fetch(url);
             return await response.json();
         } catch(error) {
-            return new Error(error.message);
+            throw new Error(error.message);
         }
     }
 };
